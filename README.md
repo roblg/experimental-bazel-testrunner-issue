@@ -8,9 +8,9 @@ instance of the test class with different parameters for each result returned
 from a method annotated with `@Parameters`. The `Parameterized` runner works with
 both JUnit 4.11 and 4.12, but appears to have gotten more flexible in 4.12 --
 allowed `@Parameters` method APIs were extended to allow Object[][] in addition to
-Iterable<Object[]>. (sources
-[https://github.com/junit-team/junit4/blob/r4.11/src/main/java/org/junit/runners/Parameterized.java#L291-L298](4.11), 
-[https://github.com/junit-team/junit4/blob/r4.12/src/main/java/org/junit/runners/Parameterized.java#L279-L288](4.12)).
+Iterable<Object[]>. (sources:
+[JUnit 4.11](https://github.com/junit-team/junit4/blob/r4.11/src/main/java/org/junit/runners/Parameterized.java#L291-L298), 
+[JUnit 4.12](https://github.com/junit-team/junit4/blob/r4.12/src/main/java/org/junit/runners/Parameterized.java#L279-L288))
 
 The experimental test runner _appears_, based on code and comments, to be trying to
 isolate the tests from the bazel runner by creating a separate classloader, but the
